@@ -1,0 +1,36 @@
+
+:root{
+    --red: #FE0000;
+    --green: #008001;
+    --blue: #0000FE;
+}
+
+h1,
+#span{
+    color: var(--red);
+}
+
+h2{
+    color: #fff;
+    background-color: var(--green);
+    padding: 5px;
+}
+
+.par{
+    width: 100px;
+    background-color: var(--blue);
+    color: #fff;
+    margin-bottom: 100px;
+}
+
+.title{
+    padding: 50px;
+}
+
+.subtitle{
+    margin-left: 100px;
+}
+
+li{
+    border: 1px solid #000;
+}
