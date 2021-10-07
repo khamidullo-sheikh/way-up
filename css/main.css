@@ -5,6 +5,14 @@
     --blue: #0000FE;
 }
 
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 30px;
+}
+
 h1,
 #span{
     color: var(--red);
@@ -32,5 +40,6 @@ h2{
 }
 
 li{
+    font-size: 35px;
     border: 1px solid #000;
 }
