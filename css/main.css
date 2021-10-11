@@ -334,6 +334,18 @@ img{
         margin-bottom: 0;
         margin-right: 50px;
     }
+
+    .btn{
+        border: none;
+    }
+
+    .btn::before{
+        content: none;
+    }
+
+    .btn:hover{
+        background-color: #FFD429;
+    }
 }
 @media only screen and (max-width: 576px) {
     .container{
