@@ -68,11 +68,37 @@ img{
 .btn{
     display: inline-block;
     padding: 20px 30px;
-    background-color: #FFD429;
+    background-color: transparent;
     color: #2E2A1B;
     font-size: 1.5rem;
     font-family: var(--rare__font);
     font-weight: var(--blak);
+    border-radius: 5px;
+    border: 5px solid #FFD429;
+    position: relative;
+    transition: background-color .3s ease-in-out,
+                border-color .3s ease-in-out;
+    z-index: 0;
+}
+
+.btn::before{
+    content: '';
+    width: 102%;
+    height: 110%;
+    border-radius: 5px;
+    background-color: #FFD429;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: width .3s ease-in-out,
+                height .3s ease-in-out;
+}
+
+.btn:hover::before{
+    width: 90%;
+    height: 70%;
 }
 
 /* NAV */
@@ -232,7 +258,6 @@ img{
 
 .main__form .btn{
     width: 100%;
-    border: none;
     cursor: pointer;
 }
 
