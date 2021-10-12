@@ -59,10 +59,9 @@ img{
 }
 
 .container{
-    width: 100%;
-    max-width: 1260px;
+    max-width: 1270px;
     margin: 0 auto;
-    padding: 0 60px;
+    padding: 0 15px;
 }
 
 .btn{
@@ -123,10 +122,14 @@ img{
 
 /* HERO */
 
-.header__hero{
+.wrapper{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.hero__text{
+    max-width: 555px;
 }
 
 .hero__title{
@@ -280,10 +283,11 @@ img{
 
 @media only screen and (max-width: 992px) {
     .container{
+        width: 100%;
         padding: 0 80px;
     }
 
-    .header__hero{
+    .wrapper{
         flex-direction: column-reverse;
         padding-bottom: 120px;
     }
@@ -334,18 +338,6 @@ img{
         margin-bottom: 0;
         margin-right: 50px;
     }
-
-    .btn{
-        border: none;
-    }
-
-    .btn::before{
-        content: none;
-    }
-
-    .btn:hover{
-        background-color: #FFD429;
-    }
 }
 @media only screen and (max-width: 576px) {
     .container{
@@ -356,10 +348,6 @@ img{
     .hero__par,
     .btn{
         width: 100%;
-    }
-
-    .header__hero{
-        padding-bottom: 100px;
     }
 
     .hero__img{
@@ -413,5 +401,9 @@ img{
 
     .main__form{
         width: 100%;
+    }
+
+    .wrapper{
+        padding-bottom: 100px;
     }
 }
